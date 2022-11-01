@@ -202,7 +202,7 @@ static void priority_example_task_two()
 static void priority_example_task_three()
 {
     //printf("Status message  ");
-    ESP_LOGI("Status message  ");
+    ESP_LOGI(TAG, "Status message  ");
     vTaskDelay(1000);    
 }
 
