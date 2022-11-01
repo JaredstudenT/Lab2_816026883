@@ -33,7 +33,11 @@ static const char *TAG = "main";
 #define PRIORITY_MINIMUM 1
 
 
+static void priority_example_task_one();
 
+static void priority_example_task_two();
+
+static void priority_example_task_three();
 
 //static xQueueHandle gpio_evt_queue = NULL;
 
@@ -56,7 +60,7 @@ static const char *TAG = "main";
 //}
 
 
-
+xSemaphoreHandle xMutex;
 
 void app_main(void)
 {
@@ -206,7 +210,7 @@ static void priority_example_task_three()
     vTaskDelay(1000);    
 }
 
-SemaphoreHandle_t xMutex;
+//SemaphoreHandle_t xMutex;
 
 void createMutex( void * pvParameters )
 {
