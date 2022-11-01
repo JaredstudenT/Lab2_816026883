@@ -55,7 +55,7 @@ static const char *TAG = "main";
 //   }
 //}
 
-SemaphoreHandle_t xMutex;
+
 
 static void priority_example_task_one()
 {
@@ -116,6 +116,20 @@ static void priority_example_task_three()
     vTaskDelay(1000);    
 }
 
+SemaphoreHandle_t xMutex;
+
+void createMutex( void * pvParameters )
+{
+   /* Create a mutex type semaphore. */
+   xMutex = xSemaphoreCreateMutex();
+
+   if( xMutex != NULL )
+   {
+       /* The semaphore was created successfully and
+       can be used. */
+   }
+}
+
 void app_main(void)
 {
     //gpio_config_t io_conf;
@@ -144,27 +158,6 @@ void app_main(void)
 
     //change gpio intrrupt type for one pin
     //gpio_set_intr_type(GPIO_INPUT_IO_0, GPIO_INTR_NEGEDGE);
-
-    //create a queue to handle gpio event from isr
-    //gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
-    //start gpio task
-    //xTaskCreate(gpio_task_example, "gpio_task_example", 2048, NULL, 10, NULL);
-
-
-
-
-
-    //install gpio isr service
-    //gpio_install_isr_service(0);
-    //hook isr handler for specific gpio pin
-    //gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void *) GPIO_INPUT_IO_0);
-    //hook isr handler for specific gpio pin
-    //gpio_isr_handler_add(GPIO_INPUT_IO_1, gpio_isr_handler, (void *) GPIO_INPUT_IO_1);
-
-    //remove isr handler for gpio number.
-    //gpio_isr_handler_remove(GPIO_INPUT_IO_0);
-    //hook isr handler for specific gpio pin again
-    //gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void *) GPIO_INPUT_IO_0);
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
