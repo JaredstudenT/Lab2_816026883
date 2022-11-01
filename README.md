@@ -17,7 +17,8 @@ This file contains hardware specific defintions . Changing one of these definiti
 
 ### /sdk/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h
 
-This file contains SDK and hardware specific configuration. IT specifies which functions from the SDK are available to be called within the code. If this file is changed to disable a function that is called within the code, there will be an error. On the other hand, if a function is disabled that is not called, there might be an increase in performance, memory utilization .
+This file contains SDK and hardware specific configuration. It specifies which functions from the SDK are available to be called within the code. If this file is changed to disable a function that is called within the code, there will be an error. On the other hand, if a function is disabled that is not called, there might be an increase in performance, memory utilization .
+
 ---
 ## P2 Answers
 
