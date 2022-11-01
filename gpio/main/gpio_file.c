@@ -55,6 +55,8 @@ static const char *TAG = "main";
 //   }
 //}
 
+SemaphoreHandle_t xMutex;
+
 static void priority_example_task_one()
 {
     if( xMutex != NULL )
