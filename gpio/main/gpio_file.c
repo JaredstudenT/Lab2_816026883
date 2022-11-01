@@ -57,82 +57,10 @@ static const char *TAG = "main";
 
 
 
-static void priority_example_task_one()
-{
-    if( xMutex != NULL )
-    {
-        if( xSemaphoreTake( xMutex, ( TickType_t ) 10 ) == pdTRUE )
-        {
-            gpio_set_level(GPIO_OUTPUT_IO_0, 1);
-            xSemaphoreGive( xMutex );
-        }
-    }
-
-    printf("start active delay");
-    for(int i=0;i<500;i++)
-    {   
-        i=i+1;
-        i=i-1;
-        if(i=250)
-        {
-            printf("Middle of active delay");
-        }
-    }
-    printf("end active delay");
-
-
-    vTaskDelay(1000);
-}
-
-static void priority_example_task_two()
-{
-    if( xMutex != NULL )
-    {
-        if( xSemaphoreTake( xMutex, ( TickType_t ) 10 ) == pdTRUE )
-        {
-            gpio_set_level(GPIO_OUTPUT_IO_0, 0);
-            xSemaphoreGive( xMutex );
-        }
-    }
-    printf("start active delay");
-    for(int i=0;i<500;i++)
-    {   
-        i=i+1;
-        i=i-1;
-        if(i=250)
-        {
-            printf("Middle of active delay");
-        }
-    }
-    printf("end active delay");
-
-    vTaskDelay(1000);
-}
-
-static void priority_example_task_three()
-{
-    //printf("Status message  ");
-    ESP_LOGI("Status message  ");
-    vTaskDelay(1000);    
-}
-
-SemaphoreHandle_t xMutex;
-
-void createMutex( void * pvParameters )
-{
-   /* Create a mutex type semaphore. */
-   xMutex = xSemaphoreCreateMutex();
-
-   if( xMutex != NULL )
-   {
-       /* The semaphore was created successfully and
-       can be used. */
-   }
-}
 
 void app_main(void)
 {
-    //gpio_config_t io_conf;
+    gpio_config_t io_conf;
     //disable interrupt
     //io_conf.intr_type = GPIO_INTR_DISABLE;
     //set as output mode
@@ -147,11 +75,11 @@ void app_main(void)
     gpio_config(&io_conf);
 
     //interrupt of rising edge
-    io_conf.intr_type = GPIO_INTR_NEGEDGE;
+    //io_conf.intr_type = GPIO_INTR_NEGEDGE;
     //bit mask of the pins, use GPIO4/5 here
-    io_conf.pin_bit_mask = GPIO_INPUT_PIN_SEL;
+    //io_conf.pin_bit_mask = GPIO_INPUT_PIN_SEL;
     //set as input mode
-    io_conf.mode = GPIO_MODE_INPUT;
+    //io_conf.mode = GPIO_MODE_INPUT;
     //enable pull-up mode
     //io_conf.pull_up_en = 1;
     //gpio_config(&io_conf);
@@ -212,4 +140,82 @@ void app_main(void)
     //    //added in an output comment to ensure the program is working
     //    //gpio_set_level(GPIO_OUTPUT_IO_1, cnt % 2);
     //}
+}
+
+
+static void priority_example_task_one()
+{
+    if( xMutex != NULL )
+    {
+        if( xSemaphoreTake( xMutex, ( TickType_t ) 10 ) == pdTRUE )
+        {
+            gpio_set_level(GPIO_OUTPUT_IO_0, 1);
+            xSemaphoreGive( xMutex );
+        }
+    }
+
+    printf("start active delay");
+    for(int i=0;i<500;i++)
+    {   
+        i=i+1;
+        i=i-1;
+        if(i==250)
+        {
+            printf("Middle of active delay");
+        }
+    }
+    printf("end active delay");
+
+
+    vTaskDelay(1000);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+static void priority_example_task_two()
+{
+    if( xMutex != NULL )
+    {
+        if( xSemaphoreTake( xMutex, ( TickType_t ) 10 ) == pdTRUE )
+        {
+            gpio_set_level(GPIO_OUTPUT_IO_0, 0);
+            xSemaphoreGive( xMutex );
+        }
+    }
+    printf("start active delay");
+    for(int i=0;i<500;i++)
+    {   
+        i=i+1;
+        i=i-1;
+        if(i==250)
+        {
+            printf("Middle of active delay");
+        }
+    }
+    printf("end active delay");
+
+    vTaskDelay(1000);
+}
+
+static void priority_example_task_three()
+{
+    //printf("Status message  ");
+    ESP_LOGI("Status message  ");
+    vTaskDelay(1000);    
+}
+
+SemaphoreHandle_t xMutex;
+
+void createMutex( void * pvParameters )
+{
+   /* Create a mutex type semaphore. */
+   xMutex = xSemaphoreCreateMutex();
+
+   if( xMutex != NULL )
+   {
+       /* The semaphore was created successfully and
+       can be used. */
+   }
 }
