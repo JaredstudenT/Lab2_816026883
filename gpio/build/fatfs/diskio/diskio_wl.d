@@ -4,7 +4,7 @@ diskio/diskio_wl.o: \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/fatfs/src/diskio.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/fatfs/src/ffconf.h \
- /home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h \
+ /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
@@ -53,7 +53,7 @@ diskio/diskio_wl.o: \
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/fatfs/src/ffconf.h:
 
-/home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h:
+/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h:
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 

@@ -2,7 +2,7 @@ esp-mqtt/lib/mqtt_msg.o: \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/mqtt_msg.c \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/include/mqtt_msg.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include/mqtt_config.h \
- /home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h \
+ /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include/mqtt_client.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include/mqtt_config.h \
@@ -96,7 +96,7 @@ esp-mqtt/lib/mqtt_msg.o: \
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include/mqtt_config.h:
 
-/home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h:
+/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h:
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include/mqtt_client.h:
 

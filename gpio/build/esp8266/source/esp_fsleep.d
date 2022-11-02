@@ -4,7 +4,7 @@ source/esp_fsleep.o: \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
- /home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h \
+ /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/pin_mux_register.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
@@ -21,7 +21,7 @@ source/esp_fsleep.o: \
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h:
 
-/home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h:
+/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h:
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
 

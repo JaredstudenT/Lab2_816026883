@@ -1,8 +1,8 @@
 gpio_file.o: \
- /home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/main/gpio_file.c \
+ /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/main/gpio_file.c \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h \
+ /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -39,13 +39,15 @@ gpio_file.o: \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
- /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h
+ /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
+ /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h \
+ /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h:
+/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h:
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 
@@ -120,4 +122,8 @@ gpio_file.o: \
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h:
-/home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/main/./gpio_file.c:
+
+/opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h:
+
+/opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
+/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/main/./gpio_file.c:

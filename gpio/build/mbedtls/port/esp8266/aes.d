@@ -3,7 +3,7 @@ port/esp8266/aes.o: \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266/esp_aes.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/ibus_data.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/util_assert.h \
- /home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h
+ /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266/esp_aes.h:
 
@@ -11,5 +11,5 @@ port/esp8266/aes.o: \
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/util_assert.h:
 
-/home/jaredmohansingh/Lab1GitFolder/Lab1_Q1_816026883_Q2/gpio/build/include/sdkconfig.h:
+/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/include/sdkconfig.h:
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/mbedtls/port/esp8266/aes.c:
