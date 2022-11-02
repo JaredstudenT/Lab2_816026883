@@ -18,6 +18,7 @@
 
 #include "esp_log.h"
 #include "esp_system.h"
+#include "semphr.h"
 
 static const char *TAG = "main";
  
@@ -33,7 +34,7 @@ static const char *TAG = "main";
 #define PRIORITY_MINIMUM 1
 
 
-static void priority_example_task_one();
+static void priority_example_task_one()
 
 static void priority_example_task_two();
 
