@@ -61,7 +61,7 @@ static void priority_example_task_three();
 //}
 
 
-xSemaphoreHandle_t xMutex;
+SemaphoreHandle_t xMutex;
 
 void app_main(void)
 {
