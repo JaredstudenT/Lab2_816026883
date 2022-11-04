@@ -112,17 +112,7 @@ void app_main(void)
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
 
-    
-    //int cnt = 0;
-
-    //while (1) {
-    //    ESP_LOGI(TAG, "cnt: %d\n", cnt++);
-    //    vTaskDelay(1000 / portTICK_RATE_MS);
-    //    gpio_set_level(GPIO_OUTPUT_IO_0, cnt % 2);
-    //    printf(" HELLO 816026883 \n");
-    //    //added in an output comment to ensure the program is working
-    //    //gpio_set_level(GPIO_OUTPUT_IO_1, cnt % 2);
-    //}
+   
 }
 
 
@@ -147,13 +137,15 @@ static void priority_example_task_one()
         //printf("\n");
         if(i%100 == 0 )
         {
-            printf(" active delay \n");
+            printf(" active delay at position\n");
+            printf(i);
+            printf("\n");
         }
     }
     printf("end active delay");
 
 
-    vTaskDelay(100);
+    vTaskDelay(1000 / portTICK_RATE_MS);
 }
 
 
@@ -181,13 +173,16 @@ static void priority_example_task_two()
         //printf("\n");
         if(i%100 == 0 )
         {
-            printf(" active delay \n");
+            printf(" active delay at position\n");
+            printf(i);
+            printf("\n");
         }
     }
 
     printf("end active delay \n");
+
     printf("start task delay \n");
-    vTaskDelay(100);
+    vTaskDelay(1000 / portTICK_RATE_MS);
     printf("end task delay \n");
 }
 
@@ -195,10 +190,11 @@ static void priority_example_task_three()
 {
     //printf("Status message  ");
     //ESP_LOGI(TAG, "Status message  \n");
+    printf(" start TASK THREE\n");
     printf(" STATUS------------- MESSAGE \n");
     printf("\n");
     printf("start task delay \n");
-    vTaskDelay(100);
+    vTaskDelay(1000 / portTICK_RATE_MS);
     printf("end task delay \n");    
 }
 
