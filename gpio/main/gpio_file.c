@@ -135,7 +135,7 @@ static void priority_example_task_one()
         if(i%100 == 0 )
         {
             printf(" active delay at position\n");
-            printf(i);
+            //printf(i);
             printf("\n");
         }
     }
@@ -171,7 +171,7 @@ static void priority_example_task_two()
         if(i%100 == 0 )
         {
             printf(" active delay at position\n");
-            printf(i);
+            //printf(i);
             printf("\n");
         }
     }
