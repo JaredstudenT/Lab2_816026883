@@ -128,9 +128,10 @@ static void priority_example_task_one()
     }
 
     printf("start active delay");
-    for(int i=0;i<50000;i++)
+    for(int i=0;i<5000;i++)
     {   
-        
+        i=i+1;
+        i=i-1;
         if(i%100 == 0 )
         {
             printf(" active delay at position\n");
@@ -160,10 +161,10 @@ static void priority_example_task_two()
     }
 
     printf("\n start active delay");
-    for(int i=0;i<50000;i++)
+    for(int i=0;i<5000;i++)
     {   
-        //i=i+1;
-        //i=i-1;
+        i=i+1;
+        i=i-1;
         //printf("We are at active delay point \n");
         //printf(i);
         //printf("\n");
