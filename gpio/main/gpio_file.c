@@ -29,8 +29,8 @@ static const char *TAG = "main";
 #define GPIO_INPUT_IO_0     2
 #define GPIO_INPUT_PIN_SEL  (1ULL<<GPIO_INPUT_IO_0) 
 
-#define PRIORITY_MAXIMUM 7
-#define PRIORITY_MEDIUM 3
+#define PRIORITY_MAXIMUM 1
+#define PRIORITY_MEDIUM 1
 #define PRIORITY_MINIMUM 1
 
 
@@ -130,7 +130,7 @@ void app_main(void)
         
     }
 
-
+    
     //int cnt = 0;
 
     //while (1) {
@@ -158,20 +158,20 @@ static void priority_example_task_one()
     printf("start active delay");
     for(int i=0;i<5000;i++)
     {   
-        i=i+1;
-        i=i-1;
-        printf("We are at active delay point \n");
-        printf(i);
-        printf("\n");
-        if(i== 2500 )
+        //i=i+1;
+        //i=i-1;
+        //printf("We are at active delay point \n");
+        //printf(i);
+        //printf("\n");
+        if(i%10 == 0 )
         {
-            printf("Middle of active delay");
+            printf(" active delay \n");
         }
     }
     printf("end active delay");
 
 
-    vTaskDelay(1000);
+    vTaskDelay(10000);
 }
 
 
@@ -188,29 +188,33 @@ static void priority_example_task_two()
             xSemaphoreGive( xMutex );
         }
     }
-    printf("start active delay");
+
+    printf("\n start active delay");
     for(int i=0;i<5000;i++)
     {   
-        i=i+1;
-        i=i-1;
-        printf("We are at active delay point \n");
-        printf(i);
-        printf("\n");
-        if(i==2500)
+        //i=i+1;
+        //i=i-1;
+        //printf("We are at active delay point \n");
+        //printf(i);
+        //printf("\n");
+        if(i%10 == 0 )
         {
-            printf("Middle of active delay");
+            printf(" active delay \n");
         }
     }
+
     printf("end active delay");
 
-    vTaskDelay(1000);
+    vTaskDelay(10000);
 }
 
 static void priority_example_task_three()
 {
     //printf("Status message  ");
-    ESP_LOGI(TAG, "Status message  ");
-    vTaskDelay(1000);    
+    //ESP_LOGI(TAG, "Status message  \n");
+    printf("Status MESSAGE \n");
+    printf("\n");
+    vTaskDelay(10000);    
 }
 
 //SemaphoreHandle_t xMutex;
