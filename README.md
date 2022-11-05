@@ -5,6 +5,10 @@ This lab is focused on schedulnig with priority in mind and evaluating  performa
 The following lists the answers for questions P1 and P2 in the lab
 
 ---
+##Question 2 answer
+
+When the priority of the tasks were changed , the resource controlled by the MUtex behaved differently and certain tasks were executed with higher prefernce than others. This was seen especially when the task to turn the LED on was given highest priority and the LED remained ON most of the time. On the other hand, when the task that turns the LED off is given highest priority , the LED remains off for the majority of the time .
+---
 
 ## P1 Answers
 
@@ -37,3 +41,4 @@ THe following provide debug info about the tasks.
 #ifndef configENABLE_TASK_SNAPSHOT
 #define configENABLE_TASK_SNAPSHOT          1
 #endif
+
