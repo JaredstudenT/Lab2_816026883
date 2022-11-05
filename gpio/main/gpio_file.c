@@ -20,9 +20,10 @@ static const char *TAG = "main";
 //THe ON-board LED is not used, instead an additional LED 
 #define GPIO_OUTPUT_PIN_SEL  (1ULL<<GPIO_OUTPUT_IO_0) 
 
-#define PRIORITY_MAXIMUM 1
-#define PRIORITY_MEDIUM 2
+#define PRIORITY_MAXIMUM 3
+#define PRIORITY_MEDIUM 3
 #define PRIORITY_MINIMUM 3
+//The priorities are all set to the same
 
 static void priority_example_task_one();
 

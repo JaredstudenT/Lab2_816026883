@@ -1,129 +1,92 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2022.11.04 19:24:18 =~=~=~=~=~=~=~=~=~=~=~=
-..[0;32mI (67108) main: Status Message[0m
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2022.11.04 19:46:07 =~=~=~=~=~=~=~=~=~=~=~=
+..[0;32mI (76246) main: Status Message[0m
 
-...[0;32mI (68108) main: Status Message[0m
-
-.[0;32mI (69108) main: Status Message[0m
+..[0;32mI (77246) main: Status Message[0m
 
 LED Turn OFF 
-..[0;32mI (70108) main: Status Message[0m
-
-...[0;32mI (71109) main: Status Message[0m
-
-..[0;32mI (72109) main: Status Message[0m
+...[0;32mI (78246) main: Status Message[0m
 
 LED Turn ON 
-...[0;32mI (73109) main: Status Message[0m
+...[0;32mI (79256) main: Status Message[0m
 
-LED Turn OFF 
-...[0;32mI (74109) main: Status Message[0m
+..[0;32mI (80267) main: Status Message[0m
 
-..[0;32mI (75109) main: Status Message[0m
+...[0;32mI (81277) main: Status Message[0m
 
-..[0;32mI (76109) main: Status Message[0m
-
-..[0;32mI (77109) main: Status Message[0m
+..[0;32mI (82277) main: Status Message[0m
 
 .LED Turn OFF 
-...[0;32mI (78109) main: Status Message[0m
-
-..[0;32mI (79109) main: Status Message[0m
-
-..[0;32mI (80109) main: Status Message[0m
-
-.LED Turn OFF 
-.[0;32mI (81110) main: Status Message[0m
-
-..[0;32mI (82110) main: Status Message[0m
-
-...[0;32mI (83110) main: Status Message[0m
-
-.LED Turn ON 
-.[0;32mI (84110) main: Status Message[0m
-
-..LED Turn OFF 
-.[0;32mI (85110) main: Status Message[0m
-
-...[0;32mI (86110) main: Status Message[0m
-
-..[0;32mI (87110) main: Status Message[0m
-
-..[0;32mI (88110) main: Status Message[0m
-
-..LED Turn OFF 
-.[0;32mI (89110) main: Status Message[0m
-
-...[0;32mI (90110) main: Status Message[0m
-
-..[0;32mI (91111) main: Status Message[0m
-
-..[0;32mI (92111) main: Status Message[0m
-
-LED Turn OFF 
-..[0;32mI (93111) main: Status Message[0m
-
-..[0;32mI (94111) main: Status Message[0m
-
-...[0;32mI (95111) main: Status Message[0m
-
-LED Turn ON 
-..[0;32mI (96111) main: Status Message[0m
-
-.LED Turn OFF 
-..[0;32mI (97111) main: Status Message[0m
-
-...[0;32mI (98111) main: Status Message[0m
-
-..[0;32mI (99111) main: Status Message[0m
-
-..[0;32mI (100111) main: Status Message[0m
-
-.LED Turn OFF 
-...[0;32mI (101112) main: Status Message[0m
-
-..[0;32mI (102112) main: Status Message[0m
-
-..[0;32mI (103112) main: Status Message[0m
-
-.[0;32mI (104112) main: Status Message[0m
-
-LED Turn OFF 
-...[0;32mI (105112) main: Status Message[0m
-
-..[0;32mI (106112) main: Status Message[0m
+.[0;32mI (83277) main: Status Message[0m
 
 ..LED Turn ON 
-.[0;32mI (107112) main: Status Message[0m
+.[0;32mI (84287) main: Status Message[0m
 
-..LED Turn OFF 
-.[0;32mI (108112) main: Status Message[0m
+...[0;32mI (85297) main: Status Message[0m
 
-..[0;32mI (109112) main: Status Message[0m
+..[0;32mI (86307) main: Status Message[0m
 
-...[0;32mI (110112) main: Status Message[0m
+...[0;32mI (87317) main: Status Message[0m
 
-..[0;32mI (111113) main: Status Message[0m
-
-..LED Turn OFF 
-.[0;32mI (112113) main: Status Message[0m
-
-...[0;32mI (113113) main: Status Message[0m
-
-..[0;32mI (114113) main: Status Message[0m
-
-.[0;32mI (115113) main: Status Message[0m
+.[0;32mI (88317) main: Status Message[0m
 
 .LED Turn OFF 
-..[0;32mI (116113) main: Status Message[0m
-
-..[0;32mI (117113) main: Status Message[0m
-
-..[0;32mI (118113) main: Status Message[0m
+..[0;32mI (89317) main: Status Message[0m
 
 .LED Turn ON 
-..[0;32mI (119113) main: Status Message[0m
+..[0;32mI (90328) main: Status Message[0m
+
+...[0;32mI (91338) main: Status Message[0m
+
+..[0;32mI (92348) main: Status Message[0m
+
+..[0;32mI (93358) main: Status Message[0m
+
+..[0;32mI (94358) main: Status Message[0m
+
+LED Turn OFF 
+...[0;32mI (95358) main: Status Message[0m
+
+LED Turn ON 
+...[0;32mI (96368) main: Status Message[0m
+
+..[0;32mI (97378) main: Status Message[0m
+
+..[0;32mI (98388) main: Status Message[0m
+
+..[0;32mI (99388) main: Status Message[0m
+
+..LED Turn OFF 
+.[0;32mI (100389) main: Status Message[0m
+
+..LED Turn ON 
+.[0;32mI (101399) main: Status Message[0m
+
+...[0;32mI (102409) main: Status Message[0m
+
+..[0;32mI (103419) main: Status Message[0m
+
+...[0;32mI (104429) main: Status Message[0m
+
+.[0;32mI (105429) main: Status Message[0m
 
 .LED Turn OFF 
-..[0;32mI (120113) main: Status Message[0m
+..[0;32mI (106429) main: Status Message[0m
+
+.LED Turn ON 
+..[0;32mI (107439) main: Status Message[0m
+
+...[0;32mI (108449) main: Status Message[0m
+
+..[0;32mI (109459) main: Status Message[0m
+
+..[0;32mI (110470) main: Status Message[0m
+
+..[0;32mI (111470) main: Status Message[0m
+
+LED Turn OFF 
+...[0;32mI (112470) main: Status Message[0m
+
+LED Turn ON 
+...[0;32mI (113480) main: Status Message[0m
 
 .
