@@ -12,6 +12,8 @@
 #include "esp_system.h"
 #include "semphr.h"
 
+#include "unistd.h"
+
 #include "time.h"
 
 static const char *TAG = "main";
@@ -20,10 +22,9 @@ static const char *TAG = "main";
 //THe ON-board LED is not used, instead an additional LED 
 #define GPIO_OUTPUT_PIN_SEL  (1ULL<<GPIO_OUTPUT_IO_0) 
 
-#define PRIORITY_MAXIMUM 3
-#define PRIORITY_MEDIUM 3
+#define PRIORITY_MAXIMUM 1
+#define PRIORITY_MEDIUM 2
 #define PRIORITY_MINIMUM 3
-//The priorities are all set to the same
 
 static void priority_example_task_one();
 
@@ -32,6 +33,13 @@ static void priority_example_task_two();
 static void priority_example_task_three();
 
 SemaphoreHandle_t xMutex;
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+void vApplicationIdleHook(void)
+{
+    sleep(1000);
+}
 
 void app_main(void)
 {
@@ -59,9 +67,13 @@ void app_main(void)
      }
 
     //vTaskStartScheduler();
+    vApplicationIdleHook();
 }
 
+
+
 //////////////////////////////////////////////////////////////////////////////////////////
+
 
 static void active_delay()
 {
@@ -92,7 +104,7 @@ static void priority_example_task_one()
 
         active_delay();
         vTaskDelay(1000 / portTICK_RATE_MS);
-
+        vApplicationIdleHook();
     }
 }
 
@@ -114,6 +126,7 @@ static void priority_example_task_two()
 
         active_delay();
         vTaskDelay(1000 / portTICK_RATE_MS);
+        vApplicationIdleHook();
     }
 }
 
@@ -125,7 +138,7 @@ static void priority_example_task_three()
         printf("\n");
         
         vTaskDelay(1000 / portTICK_RATE_MS);
-        
+        vApplicationIdleHook();
     }
 }
 
