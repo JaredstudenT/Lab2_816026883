@@ -41,7 +41,8 @@ gpio_file.o: \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
  /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h \
- /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h
+ /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
+ /opt/esp_sdk/ESP8266_RTOS_SDK/components/newlib/platform_include/time.h
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -126,4 +127,6 @@ gpio_file.o: \
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h:
 
 /opt/esp_sdk/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
+
+/opt/esp_sdk/ESP8266_RTOS_SDK/components/newlib/platform_include/time.h:
 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/main/./gpio_file.c:
