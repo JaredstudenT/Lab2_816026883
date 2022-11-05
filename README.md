@@ -6,6 +6,11 @@ The following lists the answers for questions P1 and P2 in the lab
 
 ---
 
+##Answers for question 3
+
+The use of the vApplicationIdleHook function does not affect performance, it carries on normally and does not affect the timing of the tasks.
+---
+
 ## P1 Answers
 
 ### /project/sdkconfig
