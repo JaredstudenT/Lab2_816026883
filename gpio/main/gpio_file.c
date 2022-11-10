@@ -20,9 +20,10 @@ static const char *TAG = "main";
 //THe ON-board LED is not used, instead an additional LED 
 #define GPIO_OUTPUT_PIN_SEL  (1ULL<<GPIO_OUTPUT_IO_0) 
 
-#define PRIORITY_MAXIMUM 3
-#define PRIORITY_MEDIUM 3
-#define PRIORITY_MINIMUM 3
+#define PRIORITY_MAXIMUM 5
+#define PRIORITY_MEDIUM 5
+#define PRIORITY_MINIMUM 5
+#define PRIORITY_CONSTANT 5
 //The priorities are all set to the same
 
 static void priority_example_task_one();
@@ -56,8 +57,19 @@ void app_main(void)
         xTaskCreate(priority_example_task_one, "priority_example_task_one", 2048, NULL, PRIORITY_MAXIMUM, NULL);
         xTaskCreate(priority_example_task_two, "priority_example_task_two", 2048, NULL, PRIORITY_MEDIUM, NULL);
         xTaskCreate(priority_example_task_three, "priority_example_task_three", 2048, NULL, PRIORITY_MINIMUM, NULL);
-     }
+    }
 
+    //if( xMutex != NULL )
+    //{
+    //    xTaskCreate(priority_example_task_one, "priority_example_task_one", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    //    xTaskCreate(priority_example_task_two, "priority_example_task_two", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    //    xTaskCreate(priority_example_task_three, "priority_example_task_three", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    //}
+
+    vTaskGetRunTimeStats();
+    printf("Task            Abs. Time       %%Time \n");
+    printf("---------------------------------------\n");
+    printf(buffer, "\n\n");
     //vTaskStartScheduler();
 }
 
