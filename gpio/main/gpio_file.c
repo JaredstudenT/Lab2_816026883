@@ -52,6 +52,7 @@ void app_main(void)
 
     xMutex = xSemaphoreCreateMutex();
     
+
     if( xMutex != NULL )
     {
         xTaskCreate(priority_example_task_one, "priority_example_task_one", 2048, NULL, PRIORITY_MAXIMUM, NULL);
@@ -66,10 +67,12 @@ void app_main(void)
     //    xTaskCreate(priority_example_task_three, "priority_example_task_three", 2048, NULL, PRIORITY_CONSTANT, NULL);
     //}
 
-    vTaskGetRunTimeStats();
+
+    static char task_stats[150];
+    vTaskGetRunTimeStats(task_stats);
     printf("Task            Abs. Time       %%Time \n");
     printf("---------------------------------------\n");
-    printf(buffer, "\n\n");
+    printf(task_stats, "\n\n");
     //vTaskStartScheduler();
 }
 
