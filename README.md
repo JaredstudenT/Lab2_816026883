@@ -1,8 +1,8 @@
 #  Lab2
 
-This lab is focused on schedulnig with priority in mind and evaluating  performance.
+This lab is focused on scheduling with priority of tasks in mind and evaluating performance with the mutexes/semaphores.
 
-The following lists the answers for questions P1 and P2 in the lab
+This repository uses branches to answer each question. The main branch may be ignored and only the branches "question1" , "question2" and "question3" may be considered for the corresponding question in the lab. All versions of the README contain the answer to P1 and P2.
 
 ---
 ##Question 2 answer
@@ -32,9 +32,9 @@ THe following provide debug info about the tasks.
 #define INCLUDE_uxTaskGetStackHighWaterMark 1
 
 
-#define configGENERATE_RUN_TIME_STATS           0
-#define configUSE_TRACE_FACILITY                0
-#define configUSE_STATS_FORMATTING_FUNCTIONS    0
+#define configGENERATE_RUN_TIME_STATS           1
+#define configUSE_TRACE_FACILITY                1
+#define configUSE_STATS_FORMATTING_FUNCTIONS    1
 
 #define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS()
 
