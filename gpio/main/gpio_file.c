@@ -84,17 +84,17 @@ void app_main(void)
 
     // task2 > task3 > task1
 
-    xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MINIMUM, NULL);
-    xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MAXIMUM, NULL);
-    xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MEDIUM, NULL);
-    xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
 
     // task1 > task2 > task3
 
-    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
-    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MEDIUM, NULL);
-    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
-    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
 
     // task1 > task3 > task2
     
