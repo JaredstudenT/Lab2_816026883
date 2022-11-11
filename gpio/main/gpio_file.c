@@ -55,22 +55,54 @@ void app_main(void)
     xMutex = xSemaphoreCreateMutex();
     
 
-   
-    xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
-    xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MEDIUM, NULL);
-    xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
-    xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_MINIMUM, NULL);
+   //Round Robbing scheduling
+    xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
     
-    
+    // task3 > task2 > task1
 
-    //if( xMutex != NULL )
-    //{
-    //    xTaskCreate(priority_example_task_one, "priority_example_task_one", 2048, NULL, PRIORITY_CONSTANT, NULL);
-    //    xTaskCreate(priority_example_task_two, "priority_example_task_two", 2048, NULL, PRIORITY_CONSTANT, NULL);
-    //    xTaskCreate(priority_example_task_three, "priority_example_task_three", 2048, NULL, PRIORITY_CONSTANT, NULL);
-    //}
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+
+    // task3 > task1 > task2
+
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+
+    // task2 > task1 > task3
+
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+
+    // task2 > task3 > task1
+
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+
+    // task1 > task2 > task3
+
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+
+    // task1 > task3 > task2
     
-    //vTaskStartScheduler();
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -91,12 +123,16 @@ static void active_delay()
 
 static void stats_delay()
 {
-    vTaskDelay(200000 / portTICK_RATE_MS);
-    static char task_stats[1500];
-    vTaskGetRunTimeStats(task_stats);
-    printf("Task            Abs.    Time       %%Time \n");
-    printf("---------------------------------------\n");
-    printf(task_stats, "\n\n");
+    while(1)
+    {
+        vTaskDelay(200000 / portTICK_RATE_MS);
+        static char task_stats[1500];
+        vTaskGetRunTimeStats(task_stats);
+        printf("Task            Abs.    Time       %%Time \n");
+        printf("---------------------------------------\n");
+        printf(task_stats, "\n\n");
+    }
+    
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 
