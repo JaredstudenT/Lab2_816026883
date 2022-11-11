@@ -15,7 +15,9 @@
 #include "time.h"
 
 static const char *TAG = "main";
- 
+
+void vTaskGetRunTimeStats(char *writeBuffer);
+
 #define GPIO_OUTPUT_IO_0    0
 //THe ON-board LED is not used, instead an additional LED 
 #define GPIO_OUTPUT_PIN_SEL  (1ULL<<GPIO_OUTPUT_IO_0) 
@@ -68,7 +70,7 @@ void app_main(void)
     //}
 
 
-    static char task_stats[150];
+    static char task_stats[1500];
     vTaskGetRunTimeStats(task_stats);
     printf("Task            Abs. Time       %%Time \n");
     printf("---------------------------------------\n");
