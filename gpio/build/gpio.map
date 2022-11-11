@@ -19163,72 +19163,72 @@ END GROUP
  .bss.s_cpu_speed_up_nest
                 0x000000004010465c        0x2 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(user_interface.o)
  *libfreertos.a:impure.*(.bss .bss.* COMMON)
+ *libfreertos.a:tasks.*(.bss .bss.* COMMON)
+ *fill*         0x000000004010465e        0x2 
+ .bss.ulTaskSwitchedInTime
+                0x0000000040104660        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxSchedulerSuspended
+                0x0000000040104664        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xIdleTaskHandle
+                0x0000000040104668        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xNextTaskUnblockTime
+                0x000000004010466c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxTaskNumber
+                0x0000000040104670        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xNumOfOverflows
+                0x0000000040104674        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xYieldPending
+                0x0000000040104678        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxPendedTicks
+                0x000000004010467c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xSchedulerRunning
+                0x0000000040104680        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxTopReadyPriority
+                0x0000000040104684        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xTickCount
+                0x0000000040104688        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxCurrentNumberOfTasks
+                0x000000004010468c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xSuspendedTaskList
+                0x0000000040104690       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x00000000401046a4        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xTasksWaitingTermination
+                0x00000000401046a8       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xPendingReadyList
+                0x00000000401046bc       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxOverflowDelayedTaskList
+                0x00000000401046d0        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxDelayedTaskList
+                0x00000000401046d4        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList2
+                0x00000000401046d8       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList1
+                0x00000000401046ec       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxReadyTasksLists
+                0x0000000040104700      0x12c /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxCurrentTCB
+                0x000000004010482c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
+                0x000000004010482c                pxCurrentTCB
  *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
  *libfreertos.a:timers.*(.bss .bss.* COMMON)
- *fill*         0x000000004010465e        0x2 
  .bss.xLastTime$4366
-                0x0000000040104660        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
+                0x0000000040104830        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  .bss.xTimerTaskHandle
-                0x0000000040104664        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
+                0x0000000040104834        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  .bss.xTimerQueue
-                0x0000000040104668        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
+                0x0000000040104838        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  .bss.pxOverflowTimerList
-                0x000000004010466c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
+                0x000000004010483c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  .bss.pxCurrentTimerList
-                0x0000000040104670        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
+                0x0000000040104840        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  .bss.xActiveTimerList2
-                0x0000000040104674       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
+                0x0000000040104844       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  .bss.xActiveTimerList1
-                0x0000000040104688       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
+                0x0000000040104858       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
  *libfreertos.a:queue.*(.bss .bss.* COMMON)
  *libfreertos.a:list.*(.bss .bss.* COMMON)
- *libfreertos.a:tasks.*(.bss .bss.* COMMON)
- .bss.ulTaskSwitchedInTime
-                0x000000004010469c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.uxSchedulerSuspended
-                0x00000000401046a0        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xIdleTaskHandle
-                0x00000000401046a4        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xNextTaskUnblockTime
-                0x00000000401046a8        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.uxTaskNumber
-                0x00000000401046ac        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xNumOfOverflows
-                0x00000000401046b0        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xYieldPending
-                0x00000000401046b4        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.uxPendedTicks
-                0x00000000401046b8        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xSchedulerRunning
-                0x00000000401046bc        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.uxTopReadyPriority
-                0x00000000401046c0        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xTickCount
-                0x00000000401046c4        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.uxCurrentNumberOfTasks
-                0x00000000401046c8        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xSuspendedTaskList
-                0x00000000401046cc       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.uxDeletedTasksWaitingCleanUp
-                0x00000000401046e0        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xTasksWaitingTermination
-                0x00000000401046e4       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xPendingReadyList
-                0x00000000401046f8       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.pxOverflowDelayedTaskList
-                0x000000004010470c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.pxDelayedTaskList
-                0x0000000040104710        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xDelayedTaskList2
-                0x0000000040104714       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.xDelayedTaskList1
-                0x0000000040104728       0x14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.pxReadyTasksLists
-                0x000000004010473c      0x12c /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
- .bss.pxCurrentTCB
-                0x0000000040104868        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040104868                pxCurrentTCB
  *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
  *liblwip.a:(.bss .bss.* COMMON)
                 0x000000004010486c                . = ALIGN (0x4)
@@ -19327,7 +19327,7 @@ END GROUP
 .dram0.bss      0x000000003ffe83e0     0x1538
                 0x000000003ffe83e0                . = ALIGN (0x8)
                 0x000000003ffe83e0                _bss_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libcore.a) COMMON)
+ *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:tasks.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:tasks.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:tasks.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libcore.a) COMMON)
  .bss.s_reset_reason
                 0x000000003ffe83e0        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(reset_reason.o)
  .bss.s_nmi_wd_state
@@ -24291,8 +24291,8 @@ END GROUP
  .rodata.prvProcessReceivedCommands
                 0x0000000040228288       0x28 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/freertos/libfreertos.a(timers.o)
  .rodata.stats_delay.str1.4
-                0x00000000402282b0       0x57 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
- *fill*         0x0000000040228307        0x1 
+                0x00000000402282b0       0x56 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
+ *fill*         0x0000000040228306        0x2 
  .rodata.priority_example_task_three.str1.4
                 0x0000000040228308       0x15 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
  *fill*         0x000000004022831d        0x3 
