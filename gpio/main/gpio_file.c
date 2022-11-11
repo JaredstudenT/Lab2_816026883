@@ -61,7 +61,7 @@ void app_main(void)
     xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
     xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_MINIMUM, NULL);
     
-    for (;;);
+    
 
     //if( xMutex != NULL )
     //{
@@ -91,7 +91,7 @@ static void active_delay()
 
 static void stats_delay()
 {
-    vTaskDelay(100000 / portTICK_RATE_MS);
+    vTaskDelay(200000 / portTICK_RATE_MS);
     static char task_stats[1500];
     vTaskGetRunTimeStats(task_stats);
     printf("Task            Abs.    Time       %%Time \n");
