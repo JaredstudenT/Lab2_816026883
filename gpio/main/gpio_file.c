@@ -29,10 +29,9 @@ void vTaskGetRunTimeStats(char *writeBuffer);
 //The priorities are all set to the same
 
 static void priority_example_task_one();
-
 static void priority_example_task_two();
-
 static void priority_example_task_three();
+static void active_delay();
 
 SemaphoreHandle_t xMutex;
 
