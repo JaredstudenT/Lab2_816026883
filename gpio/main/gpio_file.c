@@ -61,7 +61,7 @@ void app_main(void)
     xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
     xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_MINIMUM, NULL);
     
-    
+    for (;;);
 
     //if( xMutex != NULL )
     //{
