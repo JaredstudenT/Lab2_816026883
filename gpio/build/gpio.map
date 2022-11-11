@@ -19324,7 +19324,7 @@ END GROUP
                 0x000000003ffe83dc                . = ALIGN (0x4)
                 0x000000003ffe83dc                _noinit_end = ABSOLUTE (.)
 
-.dram0.bss      0x000000003ffe83e0      0xff0
+.dram0.bss      0x000000003ffe83e0     0x1538
                 0x000000003ffe83e0                . = ALIGN (0x8)
                 0x000000003ffe83e0                _bss_start = ABSOLUTE (.)
  *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libcore.a) COMMON)
@@ -19491,94 +19491,94 @@ END GROUP
                 0x000000003ffe90fc                g_heap_region
  .bss.buf$4420  0x000000003ffe912c       0x10 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/log/liblog.a(log.o)
  .bss.s_lock    0x000000003ffe913c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/log/liblog.a(log.o)
- .bss.task_stats$4862
-                0x000000003ffe9140       0x96 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
- *fill*         0x000000003ffe91d6        0x2 
- COMMON         0x000000003ffe91d8        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
-                0x000000003ffe91d8                xMutex
+ .bss.task_stats$4865
+                0x000000003ffe9140      0x5dc /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
+ COMMON         0x000000003ffe971c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
+                0x000000003ffe971c                xMutex
  .bss.impure_data
-                0x000000003ffe91dc       0xf0 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(reent_init.o)
- .bss.environ   0x000000003ffe92cc        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-environ.o)
-                0x000000003ffe92cc                environ
+                0x000000003ffe9720       0xf0 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(reent_init.o)
+ .bss.environ   0x000000003ffe9810        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-environ.o)
+                0x000000003ffe9810                environ
  .bss.__sinit_recursive_mutex
-                0x000000003ffe92d0        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x000000003ffe9814        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
  .bss.__sfp_recursive_mutex
-                0x000000003ffe92d4        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x000000003ffe9818        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
  .bss._global_impure_ptr
-                0x000000003ffe92d8        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-impure.o)
-                0x000000003ffe92d8                _global_impure_ptr
+                0x000000003ffe981c        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-impure.o)
+                0x000000003ffe981c                _global_impure_ptr
  .bss._ZL13s_nvs_handles
-                0x000000003ffe92dc        0xc /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
+                0x000000003ffe9820        0xc /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
  .bss._ZN3nvs4Lock10mSemaphoreE
-                0x000000003ffe92e8        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
-                0x000000003ffe92e8                _ZN3nvs4Lock10mSemaphoreE
+                0x000000003ffe982c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
+                0x000000003ffe982c                _ZN3nvs4Lock10mSemaphoreE
  .bss._ZN14NVSHandleEntry17s_nvs_next_handleE
-                0x000000003ffe92ec        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
-                0x000000003ffe92ec                _ZN14NVSHandleEntry17s_nvs_next_handleE
+                0x000000003ffe9830        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
+                0x000000003ffe9830                _ZN14NVSHandleEntry17s_nvs_next_handleE
  .bss._ZN3nvs19NVSPartitionManager8instanceE
-                0x000000003ffe92f0        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition_manager.o)
-                0x000000003ffe92f0                _ZN3nvs19NVSPartitionManager8instanceE
- .bss.s_keys    0x000000003ffe92f4        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread_local_storage.o)
-                0x000000003ffe92f4                s_keys
+                0x000000003ffe9834        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition_manager.o)
+                0x000000003ffe9834                _ZN3nvs19NVSPartitionManager8instanceE
+ .bss.s_keys    0x000000003ffe9838        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread_local_storage.o)
+                0x000000003ffe9838                s_keys
  .bss.s_pthread_cfg_key
-                0x000000003ffe92f8        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread.o)
+                0x000000003ffe983c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread.o)
  .bss.s_threads_mux
-                0x000000003ffe92fc        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread.o)
+                0x000000003ffe9840        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread.o)
  .bss.s_partition_list_lock
-                0x000000003ffe9300        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(partition.o)
+                0x000000003ffe9844        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(partition.o)
  .bss.s_partition_list
-                0x000000003ffe9304        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(partition.o)
+                0x000000003ffe9848        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(partition.o)
  .bss.FlashIsOnGoing
-                0x000000003ffe9308        0x1 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(spi_flash.o)
-                0x000000003ffe9308                FlashIsOnGoing
- *fill*         0x000000003ffe9309        0x3 
+                0x000000003ffe984c        0x1 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000003ffe984c                FlashIsOnGoing
+ *fill*         0x000000003ffe984d        0x3 
  .bss.s_registered_select_num
-                0x000000003ffe930c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs_uart.o)
+                0x000000003ffe9850        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs_uart.o)
  .bss.s_registered_selects
-                0x000000003ffe9310        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs_uart.o)
+                0x000000003ffe9854        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs_uart.o)
  .bss.s_fd_table_lock
-                0x000000003ffe9314        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
+                0x000000003ffe9858        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
  .bss.s_vfs_count
-                0x000000003ffe9318        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
- .bss.s_vfs     0x000000003ffe931c       0x20 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
+                0x000000003ffe985c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
+ .bss.s_vfs     0x000000003ffe9860       0x20 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
  .bss._ZN12_GLOBAL__N_113__new_handlerE
-                0x000000003ffe933c        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
+                0x000000003ffe9880        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
  .bss._ZN12_GLOBAL__N_12mxE
-                0x000000003ffe9340        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
+                0x000000003ffe9884        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
  .bss._ZN12_GLOBAL__N_114emergency_poolE
-                0x000000003ffe9344       0x10 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_alloc.o)
+                0x000000003ffe9888       0x10 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_alloc.o)
  .bss._ZN12_GLOBAL__N_12mxE
-                0x000000003ffe9354        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_terminate.o)
- .bss._ZL4init  0x000000003ffe9358        0x8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
+                0x000000003ffe9898        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_terminate.o)
+ .bss._ZL4init  0x000000003ffe989c        0x8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
  .bss._ZL10eh_globals
-                0x000000003ffe9360        0x8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
+                0x000000003ffe98a4        0x8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
+ *fill*         0x000000003ffe98ac        0x4 
  .bss._ZGVZN12_GLOBAL__N_116get_atomic_mutexEvE12atomic_mutex
-                0x000000003ffe9368        0x8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
+                0x000000003ffe98b0        0x8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
  .bss._ZZN12_GLOBAL__N_116get_atomic_mutexEvE12atomic_mutex
-                0x000000003ffe9370        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
+                0x000000003ffe98b8        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
  .bss._ZN12_GLOBAL__N_19fake_condE
-                0x000000003ffe9374        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
+                0x000000003ffe98bc        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
  .bss._ZN12_GLOBAL__N_1L11static_condE
-                0x000000003ffe9378        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
+                0x000000003ffe98c0        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
  .bss._ZN12_GLOBAL__N_110fake_mutexE
-                0x000000003ffe937c        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
+                0x000000003ffe98c4        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
  .bss._ZN12_GLOBAL__N_1L12static_mutexE
-                0x000000003ffe9380        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
+                0x000000003ffe98c8        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
  .bss.p_uart_obj
-                0x000000003ffe9384        0x8 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(uart.o)
+                0x000000003ffe98cc        0x8 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(uart.o)
  .bss.s_sleep_wakup_triggers
-                0x000000003ffe938c        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_sleep.o)
+                0x000000003ffe98d4        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_sleep.o)
  .bss.s_sleep_mode
-                0x000000003ffe9390        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_sleep.o)
- .bss           0x000000003ffe9394       0x11 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2.o)
- *fill*         0x000000003ffe93a5        0x3 
- .bss           0x000000003ffe93a8       0x14 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2-fde.o)
- *fill*         0x000000003ffe93bc        0x4 
+                0x000000003ffe98d8        0x4 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_sleep.o)
+ .bss           0x000000003ffe98dc       0x11 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2.o)
+ *fill*         0x000000003ffe98ed        0x3 
+ .bss           0x000000003ffe98f0       0x14 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2-fde.o)
+ *fill*         0x000000003ffe9904        0x4 
  .bss.s_boot_time
-                0x000000003ffe93c0        0x8 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(time.o)
+                0x000000003ffe9908        0x8 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(time.o)
  .bss.__atexit_recursive_mutex
-                0x000000003ffe93c8        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
-                0x000000003ffe93c8                __atexit_recursive_mutex
+                0x000000003ffe9910        0x4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+                0x000000003ffe9910                __atexit_recursive_mutex
  *(.dynsbss)
  *(.sbss)
  *(.sbss.*)
@@ -19590,9 +19590,9 @@ END GROUP
  *(.dynbss)
  *(.share.mem)
  *(.gnu.linkonce.b.*)
-                0x000000003ffe93d0                . = ALIGN (0x8)
- *fill*         0x000000003ffe93cc        0x4 
-                0x000000003ffe93d0                _bss_end = ABSOLUTE (.)
+                0x000000003ffe9918                . = ALIGN (0x8)
+ *fill*         0x000000003ffe9914        0x4 
+                0x000000003ffe9918                _bss_end = ABSOLUTE (.)
                 0x0000000000000001                ASSERT (((_bss_end - ORIGIN (dram0_0_seg)) <= LENGTH (dram0_0_seg)), DRAM segment data does not fit.)
 
 .flash.text     0x0000000040210010    0x16632
@@ -25190,7 +25190,7 @@ OUTPUT(/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/gpio.elf
  .debug_info    0x00000000000d31ec     0x1956 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread_cond_var.o)
  .debug_info    0x00000000000d4b42      0x642 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_moddi3.o)
 
-.debug_abbrev   0x0000000000000000    0x1c95f
+.debug_abbrev   0x0000000000000000    0x1c968
  .debug_abbrev  0x0000000000000000      0x263 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/app_update/libapp_update.a(esp_app_desc.o)
  .debug_abbrev  0x0000000000000263      0x3e9 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(system_api.o)
  .debug_abbrev  0x000000000000064c      0x316 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(startup.o)
@@ -25212,104 +25212,104 @@ OUTPUT(/home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/gpio.elf
  .debug_abbrev  0x0000000000002f09      0x478 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/heap/libheap.a(esp_heap_caps.o)
  .debug_abbrev  0x0000000000003381      0x202 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/heap/libheap.a(esp_heap_init.o)
  .debug_abbrev  0x0000000000003583      0x3d1 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/log/liblog.a(log.o)
- .debug_abbrev  0x0000000000003954      0x2a1 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
- .debug_abbrev  0x0000000000003bf5      0x27e /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(syscall.o)
- .debug_abbrev  0x0000000000003e73      0x2b9 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(reent_init.o)
- .debug_abbrev  0x000000000000412c      0x223 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(esp_malloc.o)
- .debug_abbrev  0x000000000000434f      0x2a0 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(locks.o)
- .debug_abbrev  0x00000000000045ef      0x297 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-asprintf.o)
- .debug_abbrev  0x0000000000004886      0x1ff /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-assert.o)
- .debug_abbrev  0x0000000000004a85       0x37 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-environ.o)
- .debug_abbrev  0x0000000000004abc      0x2a4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fclose.o)
- .debug_abbrev  0x0000000000004d60      0x2cf /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fflush.o)
- .debug_abbrev  0x000000000000502f      0x3b3 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
- .debug_abbrev  0x00000000000053e2      0x2ae /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fopen.o)
- .debug_abbrev  0x0000000000005690      0x238 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fprintf.o)
- .debug_abbrev  0x00000000000058c8      0x287 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseek.o)
- .debug_abbrev  0x0000000000005b4f      0x2fa /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseeko.o)
- .debug_abbrev  0x0000000000005e49      0x210 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fwalk.o)
- .debug_abbrev  0x0000000000006059      0x169 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-impure.o)
- .debug_abbrev  0x00000000000061c2      0x2f6 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-makebuf.o)
- .debug_abbrev  0x00000000000064b8      0x345 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_abbrev  0x00000000000067fd      0x3c3 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_abbrev  0x0000000000006bc0      0x2f0 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_abbrev  0x0000000000006eb0      0x290 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-printf.o)
- .debug_abbrev  0x0000000000007140      0x255 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putchar.o)
- .debug_abbrev  0x0000000000007395      0x2a4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-puts.o)
- .debug_abbrev  0x0000000000007639      0x26a /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-refill.o)
- .debug_abbrev  0x00000000000078a3      0x283 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sprintf.o)
- .debug_abbrev  0x0000000000007b26      0x24f /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-stdio.o)
- .debug_abbrev  0x0000000000007d75      0x29c /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-vasprintf.o)
- .debug_abbrev  0x0000000000008011      0x277 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wbuf.o)
- .debug_abbrev  0x0000000000008288      0x245 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wsetup.o)
- .debug_abbrev  0x00000000000084cd      0x1e4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(isatty.o)
- .debug_abbrev  0x00000000000086b1      0x1e7 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-flags.o)
- .debug_abbrev  0x0000000000008898      0x2db /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fputwc.o)
- .debug_abbrev  0x0000000000008b73      0x26f /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fvwrite.o)
- .debug_abbrev  0x0000000000008de2      0x2d7 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-locale.o)
- .debug_abbrev  0x00000000000090b9      0x2a0 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-mbtowc_r.o)
- .debug_abbrev  0x0000000000009359      0x1c3 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-memchr.o)
- .debug_abbrev  0x000000000000951c      0x2cf /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putc.o)
- .debug_abbrev  0x00000000000097eb      0x25f /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wcrtomb.o)
- .debug_abbrev  0x0000000000009a4a      0x288 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wctomb_r.o)
- .debug_abbrev  0x0000000000009cd2      0x178 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-ctype_.o)
- .debug_abbrev  0x0000000000009e4a      0xec9 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
- .debug_abbrev  0x000000000000ad13      0xd08 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition_manager.o)
- .debug_abbrev  0x000000000000ba1b      0x6d1 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition.o)
- .debug_abbrev  0x000000000000c0ec      0xb51 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_handle_simple.o)
- .debug_abbrev  0x000000000000cc3d      0x57e /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition_lookup.o)
- .debug_abbrev  0x000000000000d1bb      0xe8f /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_storage.o)
- .debug_abbrev  0x000000000000e04a      0xca8 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_page.o)
- .debug_abbrev  0x000000000000ecf2      0x825 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
- .debug_abbrev  0x000000000000f517      0xd14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_pagemanager.o)
- .debug_abbrev  0x000000000001022b      0x644 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_types.o)
- .debug_abbrev  0x000000000001086f      0x2f3 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread_local_storage.o)
- .debug_abbrev  0x0000000000010b62      0x4bb /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread.o)
- .debug_abbrev  0x000000000001101d      0x323 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(partition.o)
- .debug_abbrev  0x0000000000011340      0x45b /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_abbrev  0x000000000001179b      0x29d /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_abbrev  0x0000000000011a38      0x44f /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs_uart.o)
- .debug_abbrev  0x0000000000011e87      0x5b7 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
- .debug_abbrev  0x000000000001243e       0x14 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_modsi3.o)
- .debug_abbrev  0x0000000000012452      0x696 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
- .debug_abbrev  0x0000000000012ae8      0x281 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opvnt.o)
- .debug_abbrev  0x0000000000012d69      0x26b /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_opv.o)
- .debug_abbrev  0x0000000000012fd4      0x94d /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_alloc.o)
- .debug_abbrev  0x0000000000013921      0x3e4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_op.o)
- .debug_abbrev  0x0000000000013d05      0x440 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_exception.o)
- .debug_abbrev  0x0000000000014145      0x86d /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_personality.o)
- .debug_abbrev  0x00000000000149b2      0x7ae /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_terminate.o)
- .debug_abbrev  0x0000000000015160      0x65a /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
- .debug_abbrev  0x00000000000157ba      0x59d /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_catch.o)
- .debug_abbrev  0x0000000000015d57      0x45b /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(si_class_type_info.o)
- .debug_abbrev  0x00000000000161b2      0x2d8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opnt.o)
- .debug_abbrev  0x000000000001648a      0x31c /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(bad_alloc.o)
- .debug_abbrev  0x00000000000167a6      0x274 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_ops.o)
- .debug_abbrev  0x0000000000016a1a      0x405 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_term_handler.o)
- .debug_abbrev  0x0000000000016e1f      0x5f1 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_throw.o)
- .debug_abbrev  0x0000000000017410      0x4f2 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(class_type_info.o)
- .debug_abbrev  0x0000000000017902      0x291 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_unex_handler.o)
- .debug_abbrev  0x0000000000017b93      0x55e /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_call.o)
- .debug_abbrev  0x00000000000180f1      0x355 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(tinfo.o)
- .debug_abbrev  0x0000000000018446      0x5a5 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
- .debug_abbrev  0x00000000000189eb      0x885 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
- .debug_abbrev  0x0000000000019270      0x42b /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(uart.o)
- .debug_abbrev  0x000000000001969b      0x341 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(gpio.o)
- .debug_abbrev  0x00000000000199dc      0x14c /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(backtrace.o)
- .debug_abbrev  0x0000000000019b28      0x3a3 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(ets_printf.o)
- .debug_abbrev  0x0000000000019ecb      0x334 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_timer.o)
- .debug_abbrev  0x000000000001a1ff      0x5c7 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_sleep.o)
- .debug_abbrev  0x000000000001a7c6      0x5d4 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2.o)
- .debug_abbrev  0x000000000001ad9a      0x50f /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2-fde.o)
- .debug_abbrev  0x000000000001b2a9      0x28d /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp_common/libesp_common.a(esp_err_to_name.o)
- .debug_abbrev  0x000000000001b536      0x385 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp_ringbuf/libesp_ringbuf.a(ringbuf.o)
- .debug_abbrev  0x000000000001b8bb      0x39e /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(time.o)
- .debug_abbrev  0x000000000001bc59      0x1f1 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-atexit.o)
- .debug_abbrev  0x000000000001be4a      0x1f1 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sysgettod.o)
- .debug_abbrev  0x000000000001c03b      0x245 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__atexit.o)
- .debug_abbrev  0x000000000001c280      0x24c /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
- .debug_abbrev  0x000000000001c4cc      0x2f0 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread_cond_var.o)
- .debug_abbrev  0x000000000001c7bc      0x1a3 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_moddi3.o)
+ .debug_abbrev  0x0000000000003954      0x2aa /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/main/libmain.a(gpio_file.o)
+ .debug_abbrev  0x0000000000003bfe      0x27e /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(syscall.o)
+ .debug_abbrev  0x0000000000003e7c      0x2b9 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(reent_init.o)
+ .debug_abbrev  0x0000000000004135      0x223 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(esp_malloc.o)
+ .debug_abbrev  0x0000000000004358      0x2a0 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(locks.o)
+ .debug_abbrev  0x00000000000045f8      0x297 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-asprintf.o)
+ .debug_abbrev  0x000000000000488f      0x1ff /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-assert.o)
+ .debug_abbrev  0x0000000000004a8e       0x37 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-environ.o)
+ .debug_abbrev  0x0000000000004ac5      0x2a4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fclose.o)
+ .debug_abbrev  0x0000000000004d69      0x2cf /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .debug_abbrev  0x0000000000005038      0x3b3 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .debug_abbrev  0x00000000000053eb      0x2ae /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fopen.o)
+ .debug_abbrev  0x0000000000005699      0x238 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .debug_abbrev  0x00000000000058d1      0x287 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseek.o)
+ .debug_abbrev  0x0000000000005b58      0x2fa /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseeko.o)
+ .debug_abbrev  0x0000000000005e52      0x210 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .debug_abbrev  0x0000000000006062      0x169 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-impure.o)
+ .debug_abbrev  0x00000000000061cb      0x2f6 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .debug_abbrev  0x00000000000064c1      0x345 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_abbrev  0x0000000000006806      0x3c3 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_abbrev  0x0000000000006bc9      0x2f0 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_abbrev  0x0000000000006eb9      0x290 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-printf.o)
+ .debug_abbrev  0x0000000000007149      0x255 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putchar.o)
+ .debug_abbrev  0x000000000000739e      0x2a4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-puts.o)
+ .debug_abbrev  0x0000000000007642      0x26a /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-refill.o)
+ .debug_abbrev  0x00000000000078ac      0x283 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sprintf.o)
+ .debug_abbrev  0x0000000000007b2f      0x24f /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .debug_abbrev  0x0000000000007d7e      0x29c /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-vasprintf.o)
+ .debug_abbrev  0x000000000000801a      0x277 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .debug_abbrev  0x0000000000008291      0x245 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .debug_abbrev  0x00000000000084d6      0x1e4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(isatty.o)
+ .debug_abbrev  0x00000000000086ba      0x1e7 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-flags.o)
+ .debug_abbrev  0x00000000000088a1      0x2db /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fputwc.o)
+ .debug_abbrev  0x0000000000008b7c      0x26f /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .debug_abbrev  0x0000000000008deb      0x2d7 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-locale.o)
+ .debug_abbrev  0x00000000000090c2      0x2a0 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-mbtowc_r.o)
+ .debug_abbrev  0x0000000000009362      0x1c3 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .debug_abbrev  0x0000000000009525      0x2cf /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putc.o)
+ .debug_abbrev  0x00000000000097f4      0x25f /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wcrtomb.o)
+ .debug_abbrev  0x0000000000009a53      0x288 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wctomb_r.o)
+ .debug_abbrev  0x0000000000009cdb      0x178 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-ctype_.o)
+ .debug_abbrev  0x0000000000009e53      0xec9 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_api.o)
+ .debug_abbrev  0x000000000000ad1c      0xd08 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition_manager.o)
+ .debug_abbrev  0x000000000000ba24      0x6d1 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition.o)
+ .debug_abbrev  0x000000000000c0f5      0xb51 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_handle_simple.o)
+ .debug_abbrev  0x000000000000cc46      0x57e /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_partition_lookup.o)
+ .debug_abbrev  0x000000000000d1c4      0xe8f /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_storage.o)
+ .debug_abbrev  0x000000000000e053      0xca8 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_page.o)
+ .debug_abbrev  0x000000000000ecfb      0x825 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
+ .debug_abbrev  0x000000000000f520      0xd14 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_pagemanager.o)
+ .debug_abbrev  0x0000000000010234      0x644 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/nvs_flash/libnvs_flash.a(nvs_types.o)
+ .debug_abbrev  0x0000000000010878      0x2f3 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread_local_storage.o)
+ .debug_abbrev  0x0000000000010b6b      0x4bb /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread.o)
+ .debug_abbrev  0x0000000000011026      0x323 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(partition.o)
+ .debug_abbrev  0x0000000000011349      0x45b /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_abbrev  0x00000000000117a4      0x29d /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_abbrev  0x0000000000011a41      0x44f /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs_uart.o)
+ .debug_abbrev  0x0000000000011e90      0x5b7 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/vfs/libvfs.a(vfs.o)
+ .debug_abbrev  0x0000000000012447       0x14 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_modsi3.o)
+ .debug_abbrev  0x000000000001245b      0x696 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
+ .debug_abbrev  0x0000000000012af1      0x281 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opvnt.o)
+ .debug_abbrev  0x0000000000012d72      0x26b /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_opv.o)
+ .debug_abbrev  0x0000000000012fdd      0x94d /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_alloc.o)
+ .debug_abbrev  0x000000000001392a      0x3e4 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_op.o)
+ .debug_abbrev  0x0000000000013d0e      0x440 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_exception.o)
+ .debug_abbrev  0x000000000001414e      0x86d /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_personality.o)
+ .debug_abbrev  0x00000000000149bb      0x7ae /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_terminate.o)
+ .debug_abbrev  0x0000000000015169      0x65a /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
+ .debug_abbrev  0x00000000000157c3      0x59d /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_catch.o)
+ .debug_abbrev  0x0000000000015d60      0x45b /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(si_class_type_info.o)
+ .debug_abbrev  0x00000000000161bb      0x2d8 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opnt.o)
+ .debug_abbrev  0x0000000000016493      0x31c /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(bad_alloc.o)
+ .debug_abbrev  0x00000000000167af      0x274 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_ops.o)
+ .debug_abbrev  0x0000000000016a23      0x405 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_term_handler.o)
+ .debug_abbrev  0x0000000000016e28      0x5f1 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_throw.o)
+ .debug_abbrev  0x0000000000017419      0x4f2 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(class_type_info.o)
+ .debug_abbrev  0x000000000001790b      0x291 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_unex_handler.o)
+ .debug_abbrev  0x0000000000017b9c      0x55e /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_call.o)
+ .debug_abbrev  0x00000000000180fa      0x355 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(tinfo.o)
+ .debug_abbrev  0x000000000001844f      0x5a5 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
+ .debug_abbrev  0x00000000000189f4      0x885 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
+ .debug_abbrev  0x0000000000019279      0x42b /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(uart.o)
+ .debug_abbrev  0x00000000000196a4      0x341 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(gpio.o)
+ .debug_abbrev  0x00000000000199e5      0x14c /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(backtrace.o)
+ .debug_abbrev  0x0000000000019b31      0x3a3 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(ets_printf.o)
+ .debug_abbrev  0x0000000000019ed4      0x334 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_timer.o)
+ .debug_abbrev  0x000000000001a208      0x5c7 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp8266/libesp8266.a(esp_sleep.o)
+ .debug_abbrev  0x000000000001a7cf      0x5d4 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2.o)
+ .debug_abbrev  0x000000000001ada3      0x50f /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2-fde.o)
+ .debug_abbrev  0x000000000001b2b2      0x28d /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp_common/libesp_common.a(esp_err_to_name.o)
+ .debug_abbrev  0x000000000001b53f      0x385 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/esp_ringbuf/libesp_ringbuf.a(ringbuf.o)
+ .debug_abbrev  0x000000000001b8c4      0x39e /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/newlib/libnewlib.a(time.o)
+ .debug_abbrev  0x000000000001bc62      0x1f1 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-atexit.o)
+ .debug_abbrev  0x000000000001be53      0x1f1 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sysgettod.o)
+ .debug_abbrev  0x000000000001c044      0x245 /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__atexit.o)
+ .debug_abbrev  0x000000000001c289      0x24c /opt/esp_tools/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x000000000001c4d5      0x2f0 /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/pthread/libpthread.a(pthread_cond_var.o)
+ .debug_abbrev  0x000000000001c7c5      0x1a3 /opt/esp_sdk/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_moddi3.o)
 
 .debug_loc      0x0000000000000000    0x396bc
  .debug_loc     0x0000000000000000      0x12c /home/jaredmohansingh/Lab2GitFolder/Lab2_816026883_Q1/gpio/build/app_update/libapp_update.a(esp_app_desc.o)
