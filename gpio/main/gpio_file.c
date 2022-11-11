@@ -32,6 +32,7 @@ static void priority_example_task_one();
 static void priority_example_task_two();
 static void priority_example_task_three();
 static void active_delay();
+static void stats_delay();
 
 SemaphoreHandle_t xMutex;
 
@@ -54,12 +55,13 @@ void app_main(void)
     xMutex = xSemaphoreCreateMutex();
     
 
-    if( xMutex != NULL )
-    {
-        xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
-        xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MEDIUM, NULL);
-        xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
-    }
+   
+    xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    
+    
 
     //if( xMutex != NULL )
     //{
@@ -67,14 +69,7 @@ void app_main(void)
     //    xTaskCreate(priority_example_task_two, "priority_example_task_two", 2048, NULL, PRIORITY_CONSTANT, NULL);
     //    xTaskCreate(priority_example_task_three, "priority_example_task_three", 2048, NULL, PRIORITY_CONSTANT, NULL);
     //}
-
-    active_delay();
-    active_delay();
-    static char task_stats[1500];
-    vTaskGetRunTimeStats(task_stats);
-    printf("Task            Abs.    Time       %%Time \n");
-    printf("---------------------------------------\n");
-    printf(task_stats, "\n\n");
+    
     //vTaskStartScheduler();
 }
 
@@ -89,6 +84,19 @@ static void active_delay()
             printf(".");
         }
     }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+static void stats_delay()
+{
+    vTaskDelay(100000 / portTICK_RATE_MS);
+    static char task_stats[1500];
+    vTaskGetRunTimeStats(task_stats);
+    printf("Task            Abs.    Time       %%Time \n");
+    printf("---------------------------------------\n");
+    printf(task_stats, "\n\n");
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 
