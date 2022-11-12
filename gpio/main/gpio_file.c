@@ -22,9 +22,9 @@ void vTaskGetRunTimeStats(char *writeBuffer);
 //THe ON-board LED is not used, instead an additional LED 
 #define GPIO_OUTPUT_PIN_SEL  (1ULL<<GPIO_OUTPUT_IO_0) 
 
-#define PRIORITY_MAXIMUM 5
-#define PRIORITY_MEDIUM 5
-#define PRIORITY_MINIMUM 5
+#define PRIORITY_MAXIMUM 3
+#define PRIORITY_MEDIUM 2
+#define PRIORITY_MINIMUM 1
 #define PRIORITY_CONSTANT 5
 //The priorities are all set to the same
 
@@ -56,10 +56,10 @@ void app_main(void)
     
 
    //Round Robbing scheduling
-    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_CONSTANT, NULL);
-    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_CONSTANT, NULL);
-    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_CONSTANT, NULL);
-    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
     
     // task3 > task2 > task1
 
@@ -98,10 +98,10 @@ void app_main(void)
 
     // task1 > task3 > task2
     
-    xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
-    xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MINIMUM, NULL);
-    xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MEDIUM, NULL);
-    xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    //xTaskCreate(priority_example_task_one, "gpio_HIGH", 2048, NULL, PRIORITY_MAXIMUM, NULL);
+    //xTaskCreate(priority_example_task_two, "gpio_LOW", 2048, NULL, PRIORITY_MINIMUM, NULL);
+    //xTaskCreate(priority_example_task_three, "status_msg", 2048, NULL, PRIORITY_MEDIUM, NULL);
+    //xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
 
 }
 
