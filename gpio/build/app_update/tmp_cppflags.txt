@@ -1,1 +1,1 @@
-87e6f40-dirty gpio v3.4-49-g0f200b46-dirty
+b20645a-dirty gpio v3.4-49-g0f200b46-dirty
