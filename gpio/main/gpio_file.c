@@ -131,7 +131,6 @@ static void priority_example_task_one()
 
         active_delay();
         vTaskDelay(1000 / portTICK_RATE_MS);
-        vApplicationIdleHook();
     }
 }
 
@@ -153,7 +152,6 @@ static void priority_example_task_two()
 
         active_delay();
         vTaskDelay(1000 / portTICK_RATE_MS);
-        vApplicationIdleHook();
     }
 }
 
@@ -165,7 +163,6 @@ static void priority_example_task_three()
         printf("\n");
         
         vTaskDelay(1000 / portTICK_RATE_MS);
-        vApplicationIdleHook();
     }
 }
 
