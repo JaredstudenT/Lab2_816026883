@@ -25,6 +25,7 @@ static const char *TAG = "main";
 #define PRIORITY_MAXIMUM 1
 #define PRIORITY_MEDIUM 2
 #define PRIORITY_MINIMUM 3
+#define PRIORITY_CONSTANT 5
 
 static void priority_example_task_one();
 static void priority_example_task_two();
