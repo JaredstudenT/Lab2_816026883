@@ -12,7 +12,7 @@
 #include "esp_system.h"
 #include "semphr.h"
 
-#include "unistd.h"
+#include <esp_sleep.h>
 
 #include "time.h"
 
@@ -27,10 +27,11 @@ static const char *TAG = "main";
 #define PRIORITY_MINIMUM 3
 
 static void priority_example_task_one();
-
 static void priority_example_task_two();
-
 static void priority_example_task_three();
+static void active_delay();
+static void stats_delay();
+
 
 SemaphoreHandle_t xMutex;
 
@@ -38,7 +39,12 @@ SemaphoreHandle_t xMutex;
 
 void vApplicationIdleHook(void)
 {
-    sleep(1000);
+    esp_err_t stat;
+    stat = esp_sleep_enable_timer_wakeup(2000000); 
+    if (stat == ESP_OK)
+    {
+        esp_light_sleep_start();
+    }
 }
 
 void app_main(void)
@@ -64,10 +70,14 @@ void app_main(void)
         xTaskCreate(priority_example_task_one, "priority_example_task_one", 2048, NULL, PRIORITY_MAXIMUM, NULL);
         xTaskCreate(priority_example_task_two, "priority_example_task_two", 2048, NULL, PRIORITY_MEDIUM, NULL);
         xTaskCreate(priority_example_task_three, "priority_example_task_three", 2048, NULL, PRIORITY_MINIMUM, NULL);
-     }
+        xTaskCreate(stats_delay, "stats_delay", 2048, NULL, PRIORITY_CONSTANT, NULL);
+    }
 
     //vTaskStartScheduler();
-    vApplicationIdleHook();
+    while(1)
+    {
+        vApplicationIdleHook();
+    }
 }
 
 
@@ -84,6 +94,23 @@ static void active_delay()
             printf(".");
         }
     }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+static void stats_delay()
+{
+    while(1)
+    {
+        vTaskDelay(200000 / portTICK_RATE_MS);
+        static char task_stats[1500];
+        vTaskGetRunTimeStats(task_stats);
+        printf("Task            Abs. Time          %%Time \n");
+        printf("---------------------------------------\n");
+        printf(task_stats, "\n");
+    }
+    
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 
